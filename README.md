@@ -1,10 +1,11 @@
 # Nbuproject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+This project was created for interview (from Dmytro Dohaiev) this spa uses Angular version 12.1.3.
 
 ## Development server
+1. After downloading repository please write npm install into terminal
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically starts
 
 ## Further help
 
