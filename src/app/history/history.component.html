@@ -1,0 +1,9 @@
+<div class="history-wrapper">
+  <h2 class="history-page-title">Last 10 currency calculations</h2>
+  <div
+    *ngFor="let item of historyList | slice: 0:10; let i = index"
+    class="list-item"
+  >
+    <span>{{ item }}</span>
+  </div>
+</div>

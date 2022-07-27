@@ -1,0 +1,45 @@
+<div class="currency-page">
+  <h1 class="currency-page__title">currency calculator</h1>
+  <p-calendar
+    [showIcon]="true"
+    inputId="icon"
+    (onSelect)="onDateSelect($event)"
+    dateFormat="dd.mm.yy"
+    [maxDate]="currentDate"
+    placeholder="Choose date"
+  ></p-calendar>
+  <ng-container *ngIf="currencyList.length">
+    <form [formGroup]="userForm" class="currency-form">
+      <div class="form-wrapper">
+        <div class="input-line">
+          <p-dropdown
+            [options]="currencyList"
+            formControlName="inputCurrency"
+            [autoDisplayFirst]="true"
+            autoWidth="false"
+            [style]="{ width: '100%' }"
+          ></p-dropdown>
+          <p-inputNumber
+            formControlName="inputAmount"
+            (onInput)="onInputNumber($event, 'inputAmount')"
+            [min]="1"
+          ></p-inputNumber>
+        </div>
+        <div class="output-line">
+          <p-dropdown
+            [options]="currencyList"
+            formControlName="outputCurrency"
+            autoWidth="false"
+            [style]="{ width: '100%' }"
+          ></p-dropdown>
+          <p-inputNumber
+            formControlName="outputAmount"
+            (onInput)="onInputNumber($event, 'outputAmount')"
+            [min]="1"
+          ></p-inputNumber>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+</div>
+<div class="divider"></div>

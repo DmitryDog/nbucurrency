@@ -1,0 +1,27 @@
+.history-wrapper {
+  .history-page-title {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 24px 0;
+    font-size: 16px;
+    color: #2196f3;
+  }
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  .list-item {
+    background-color: #ffffff;
+    height: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    span {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
